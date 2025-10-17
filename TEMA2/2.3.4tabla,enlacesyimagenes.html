@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horario de Clases</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #ddd;
+    }
+
+    /* Colores solo en tabla */
+    .appweb { background-color: #ffcccb; }
+    .digital { background-color: #c7e9b0; }
+    .python { background-color: #cfe2ff; }
+    .seguridad { background-color: #ffe6a7; }
+    .servicios { background-color: #d4c4fb; }
+    .sistemas { background-color: #b2f0f0; }
+    .sostenibilidad { background-color: #e2f7c9; }
+
+    /* Enlaces de la lista sin colores */
+    ol a {
+      background-color: transparent !important;
+      text-decoration: none;
+      color: black;
+    }
+    ol a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="inicio">Horario Semanal</h2>
+
+  <table>
+    <tr>
+      <th>Hora</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
+    </tr>
+
+    <tr>
+      <td>8:00 - 9:00</td>
+      <td rowspan="2" class="appweb">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=450" target="_self">
+          <img src="istockphoto-1058262630-612x612.jpg" alt="Aplicaciones Web" style="width:80px;"><br>
+          Aplicaciones Web
+        </a>
+      </td>
+      <td rowspan="2" class="digital">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=401" target="_self">
+          Digitalización
+        </a>
+      </td>
+      <td rowspan="3" class="servicios">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">
+          Servicios en red
+        </a>
+      </td>
+      <td rowspan="2" class="seguridad">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=449" target="_blank">
+          Seguridad informática
+        </a>
+      </td>
+      <td rowspan="2" class="python">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297" target="_self">
+          Python
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>9:00 - 10:00</td>
+    </tr>
+
+    <tr>
+      <td>10:00 - 11:00</td>
+      <td class="sistemas">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">
+          Sistemas operativos en red
+        </a>
+      </td>
+      <td class="seguridad">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=449" target="_blank">
+          Seguridad informática
+        </a>
+      </td>
+      <td colspan="2" class="digital">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=401" target="_self">
+          Digitalización
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>11:00 - 11:30</td>
+      <td colspan="5" style="text-align:center; background-color:#f0f0f0;"><strong>Recreo</strong></td>
+    </tr>
+
+    <tr>
+      <td>11:30 - 12:30</td>
+      <td rowspan="2" class="appweb">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=450" target="_self">
+          <img src="istockphoto-1058262630-612x612.jpg" alt="Aplicaciones Web" style="width:80px;"><br>
+          Aplicaciones Web
+        </a>
+      </td>
+      <td rowspan="2" class="sistemas">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">
+          Sistemas operativos en red
+        </a>
+      </td>
+      <td rowspan="2" class="digital">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=401" target="_self">
+          Digitalización
+        </a>
+      </td>
+      <td rowspan="3" class="python">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297" target="_self">
+          Python
+        </a>
+      </td>
+      <td rowspan="2" class="seguridad">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=449" target="_blank">
+          Seguridad informática
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>12:30 - 13:30</td>
+    </tr>
+
+    <tr>
+      <td>13:30 - 14:30</td>
+      <td class="servicios">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">
+          Servicios en red
+        </a>
+      </td>
+      <td colspan="2" class="appweb">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=450" target="_self">
+          <img src="istockphoto-1058262630-612x612.jpg" alt="Aplicaciones Web" style="width:80px;"><br>
+          Aplicaciones Web
+        </a>
+      </td>
+      <td class="sostenibilidad">
+        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=433" target="_self">
+          Sostenibilidad
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <h3>Asignaturas</h3>
+  <ol>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=450" target="_self">Aplicaciones web</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=401" target="_self">Digitalización</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=297" target="_self">Python</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=449" target="_blank">Seguridad Informática</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">Servicios en red</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=383" target="_self">Sistemas operativos en red</a></li>
+    <li><a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/view.php?id=433" target="_self">Sostenibilidad</a></li>
+  </ol>
+
+  <p><a href="#inicio">Ir a inicio</a></p>
+
+</body>
+</html>
