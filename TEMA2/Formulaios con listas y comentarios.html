@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listas y Textarea</title>
+</head>
+<body>
+<h2>Ejemplo de listas y datalist en HTML</h2>
+<form>
+<label for="fruta">Selecciona una fruta:</label>
+<br>
+<select name="fruta" id="fruta">
+<optgroup label="Temporada">
+<option value="naranja">Naranja</option>
+<option value="manzana">Manzana</option>
+</optgroup>
+<optgroup label="Tropicales">
+<option value="fresa">Fresa</option>
+<option value="piña">Piña</option>
+<option value="mango">Mango</option>
+</optgroup>
+</select>
+<br><br>
+<label for="frutas">Frutas con datalist:</label>
+<input list="frutas" name="frutas" id="frutas">
+<datalist id="frutas">
+<option value="Banana">
+<option value="Naranja">
+<option value="Fresa">
+<option value="Piña">
+<option value="Manzana">
+</datalist>
+<br><br>
+</form>
+</body>
+</html>
+<input type="submit" value="Enviar">
