@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="mailto:tuusuario@educa.madrid.org" method="POST" enctype="text/plain">
+    <fieldset>
+      <legend>Personaje</legend>
+
+      <label for="superheroe">Superhéroe favorito</label><br>
+      <input list="superheroes" id="superheroe" name="superheroe">
+      <datalist id="superheroes">
+        <option value="Superman">
+        <option value="Batman">
+        <option value="Spiderman">
+      </datalist>
+      <br><br>
+
+      <label for="color">Color</label><br>
+      <input type="color" id="color" name="color">
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos de contacto</legend>
+
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre Apellido"><br><br>
+
+      <label for="telefono">Teléfono</label><br>
+      <input type="tel" id="telefono" name="telefono" placeholder="999999999"><br><br>
+
+      <label for="fecha">Fecha</label><br>
+      <input type="date" id="fecha" name="fecha"><br><br>
+
+      <label for="contrasena">Contraseña</label><br>
+      <input type="password" id="contrasena" name="contrasena"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Selecciona forma de contacto preferida:</legend>
+      <input type="radio" id="email" name="contacto" value="email">
+      <label for="email">Email</label>
+
+      <input type="radio" id="telefonoRadio" name="contacto" value="telefono">
+      <label for="telefonoRadio">Teléfono</label>
+
+      <input type="radio" id="carta" name="contacto" value="carta">
+      <label for="carta">Carta</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Elige tus asignaturas favoritas</legend>
+      <input type="checkbox" id="appweb" name="asignatura" value="Aplicaciones web">
+      <label for="appweb">Aplicaciones web</label><br>
+
+      <input type="checkbox" id="seguridad" name="asignatura" value="Seguridad informática">
+      <label for="seguridad">Seguridad informática</label><br>
+
+      <input type="checkbox" id="bases" name="asignatura" value="Bases de datos">
+      <label for="bases">Bases de datos</label>
+    </fieldset>
+
+    <fieldset 
+      <
+      
+      <input type="file" id="archivo" name="archivo"><br><br>
+
+      <label for="hora">Selecciona hora</label><br>
+      <input type="time" id="hora" name="hora"><br><br>
+
+      <label for="mes">Selecciona mes</label><br>
+      <input type="month" id="mes" name="mes"><br><br>
+
+      <label for="rango">Nivel de satisfacción (0-10)</label><br>
+      <input type="range" id="rango" name="satisfaccion" min="0" max="10"><br><br>
+
+      <label for="url">Tu sitio web personal</label><br>
+      <input type="url" id="url" name="url" placeholder="https://"><br><br>
+
+      <label for="numero">Edad (número)</label><br>
+      <input type="number" id="numero" name="edad" min="0" max="120"><br><br>
+
+      <label for="busqueda">Búsqueda</label><br>
+      <input type="search" id="busqueda" name="busqueda" placeholder="Buscar..."><br><br>
+
+      <label for="fechaHora">Fecha y hora del evento</label><br>
+      <input type="datetime-local" id="fechaHora" name="fechaHora"><br><br>
+
+      <label for="semana">Semana del año</label><br>
+      <input type="week" id="semana" name="semana"><br><br>
+
+      <label for="imagenEnvio">Enviar con imagen</label><br>
+      <input type="image" id="imagenEnvio" src="https://via.placeholder.com/60x30?text=OK" alt="Enviar con imagen"><br><br>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Resetear">
+  </form>
+</body>
+</html>
