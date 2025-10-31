@@ -19,11 +19,15 @@ code {
     color: #009688;
 }
 
-.importante {
+.rosa {
     color: #e91e63;
 }
 
 #mayusculas {
     text-transform: uppercase;
     color: #8bc34a;
+}
+
+b {
+    font-weight: bold;
 }
