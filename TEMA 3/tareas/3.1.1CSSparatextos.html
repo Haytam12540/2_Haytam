@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS: Primera práctica</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            color: #00bcd4;
+        }
+
+        h2 {
+            color: #d63384;
+        }
+
+        h3 {
+            color: #800080;
+        }
+
+        code {
+            color: #009688;
+        }
+
+        .importante {
+            color: #e91e63;
+        }
+ 
+        #mayusculas {
+            text-transform: uppercase;
+            color: #8bc34a;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HTML & CSS: Primera práctica</h1>
+
+<h2>Estilos con propiedad style, bloque style y rel link</h2>
+
+<p>Existen <b>tres formas</b> bastante conocidas de emplear CSS para maquetar una página HTML y son las siguientes:</p>
+
+<ol>
+    <li>Aplicar CSS en línea HTML mediante atributos.</li>
+    <li>Incrustar el código CSS en una etiqueta <b>style</b> dentro del documento HTML.</li>
+    <li>Crear un documento CSS externo</li>
+</ol>
+
+<h3>CSS en línea empleando un atributo</h3>
+
+<p>Esta forma de utilizar CSS es la más básica y muy conocida... etc.</p>
+
+<p><b>Ejemplo de CSS aplicado en línea HTML.</b></p>
+<p><code>&lt;p style="color:red;"&gt;</code> <span id="mayusculas">este es un párrafo</span> <code>&lt;/p&gt;</code></p>
+
+<h3>CSS incrustado en el documento HTML</h3>
+
+<p>Otra manera fantástica de usar CSS en documento HTML es incrustando el código CSS dentro de ella...</p>
+
+<p><b>Ejemplo etiqueta style</b></p>
+<p><code>&lt;style&gt; /* Código CSS*/ &lt;/style&gt;</code></p>
+
+<h3>CSS en un documento CSS externo</h3>
+
+<p>Consiste en crear un documento CSS muy aparte y guardarlo con la extensión <b>.css</b> emplearemos la etiqueta 
+<span class="importante">link</span> dentro de la etiqueta <b>head</b>...</p>
+
+<p><code>&lt;link rel="stylesheet" href="<span class="importante">mihojascss.css</span>"&gt;</code></p>
+
+</body>
+</html>
