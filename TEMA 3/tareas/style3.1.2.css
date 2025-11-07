@@ -1,93 +1,76 @@
-body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  padding: 30px;
-}
+/* ===== CSS. Práctica 2. Estilos en tablas ===== */
 
+/* --- caption --- */
 caption {
-  background-color: #3b0944;
-  color: white;
-  font-size: 1.8em;
-  padding: 12px;
-  border-radius: 15px 15px 0 0;
-  font-weight: bold;
+    background-color: #222;       /* fondo oscuro */
+    color: white;                 /* letra blanca */
+    font-family: "Trebuchet MS", Arial, sans-serif; /* fuente elegida */
+    border-radius: 10px;          /* bordes redondeados */
+    padding: 10px;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
-table {
-  width: 90%;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
+/* --- toda la tabla (th, td) --- */
 th, td {
-  text-align: center;
-  vertical-align: middle;
-  border: 5px outset #ccc;
-  width: 10%;
-  padding: 10px;
-  background-color: #f9f9f9;
+    text-align: center;           /* texto centrado horizontal */
+    vertical-align: middle;       /* texto centrado vertical */
+    width: 10%;                   /* anchura del 10% */
+    margin: 2%;                   /* margen del 2% */
+    padding: 2%;                  /* padding del 2% */
+    border: 5px outset #999;      /* borde gris con relieve */
 }
 
-tbody th:nth-child(1) {
-  background-color: #1d2660;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
+/* --- primera columna (horas) --- */
+td:first-child {
+    background-color: navy;       /* fondo azul marino */
+    color: white;                 /* letra blanca */
 }
 
-thead th {
-  background-color: #a7c4dc;
-  color: #002244;
-  font-weight: bold;
-  font-size: 1.1em;
-  border-radius: 10px;
+/* --- primera fila (días de la semana) --- */
+thead > tr:first-child > th {
+    background-color: #6fa8dc;    /* fondo azul claro */
+    color: white;                 /* letra de color blanco */
+    border-radius: 10px;          /* bordes redondeados */
 }
 
+/* --- hueco blanco a la izquierda del lunes --- */
 thead > tr:first-child > th:first-child {
-  background-color: white;
-  border: none;
+    background-color: white;      /* hueco en blanco */
+    border: none;
 }
 
-.recreo {
-  background-color: #f1e68d;
-  font-weight: bold;
-  text-align: center;
-}
+/* --- asignaturas con color específico --- */
+.aplicaciones_web { background-color: #ffffff; } /* azul claro */
+.entornos         { background-color: #d9ead3; } /* verde claro */
+.despliegue       { background-color: #fff2cc; } /* amarillo claro */
+.servidor         { background-color: #f4cccc; } /* rosado claro */
+.empresa          { background-color: #ead1dc; } /* lila claro */
+.cliente          { background-color: #cfe0e8; } /* azul grisáceo */
+.recreo           { background-color: #ffe599; } /* amarillo pastel */
 
-.aplicaciones_web {
-  background-color: #aacfd0;
-  position: relative;
-}
-
-.seguridad { background-color: #d8e3e7; }
-.sor { background-color: #e3d0d8; }
-.sred { background-color: #e6e6e6; }
-.seginf { background-color: #d8d8f6; }
-
+/* --- efecto hover general --- */
 td:hover {
-  background-color: #d0d0d0;
-  transition: 0.3s;
-}
-td span {
-  display: block;
-  visibility: hidden;
-  font-size: 0.9em;
-}
-td:hover span {
-  visibility: visible;
-}
-td span a {
-  color: #003366;
-  text-decoration: underline;
-}
-td:hover span a {
-  color: #0055aa;
+    filter: brightness(90%);      /* oscurece ligeramente */
+    cursor: pointer;
 }
 
-.recreo:hover {
-  background-color: #e2d96e;
+/* --- mostrar enlace solo al pasar el ratón --- */
+td span {
+    visibility: hidden;           /* oculto por defecto */
 }
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-}       
+
+td:hover span {
+    visibility: visible;          /* visible en hover */
+}
+
+td span a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- efecto hover para recreo --- */
+.recreo:hover {
+    background-color: #fff2cc;    /* cambia a amarillo más claro */
+}
