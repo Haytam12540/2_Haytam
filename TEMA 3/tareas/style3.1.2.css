@@ -1,76 +1,105 @@
-/* ===== CSS. Práctica 2. Estilos en tablas ===== */
+/* === Estilos generales === */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
 
-/* --- caption --- */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Caption === */
 caption {
-    background-color: #222;       /* fondo oscuro */
-    color: white;                 /* letra blanca */
-    font-family: "Trebuchet MS", Arial, sans-serif; /* fuente elegida */
-    border-radius: 10px;          /* bordes redondeados */
-    padding: 10px;
-    font-size: 1.4em;
-    margin-bottom: 10px;
+  background-color: #1a1a2e;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+  letter-spacing: 1px;
 }
 
-/* --- toda la tabla (th, td) --- */
+/* === Cabecera (días de la semana) === */
+thead th {
+  background-color: #4a69bd;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  border: 5px outset #b3b6b7;
+}
+
+/* === Celdas comunes === */
 th, td {
-    text-align: center;           /* texto centrado horizontal */
-    vertical-align: middle;       /* texto centrado vertical */
-    width: 10%;                   /* anchura del 10% */
-    margin: 2%;                   /* margen del 2% */
-    padding: 2%;                  /* padding del 2% */
-    border: 5px outset #999;      /* borde gris con relieve */
+  text-align: center;
+  vertical-align: middle;
+  border: 5px outset #d6dbdf;
+  padding: 10px;
+  width: 10%;
+  transition: all 0.3s ease-in-out;
 }
 
-/* --- primera columna (horas) --- */
+/* === Primera columna (horas) === */
 td:first-child {
-    background-color: navy;       /* fondo azul marino */
-    color: white;                 /* letra blanca */
+  background-color: #001f3f;
+  color: #fff;
+  font-weight: bold;
 }
 
-/* --- primera fila (días de la semana) --- */
-thead > tr:first-child > th {
-    background-color: #6fa8dc;    /* fondo azul claro */
-    color: white;                 /* letra de color blanco */
-    border-radius: 10px;          /* bordes redondeados */
-}
+/* === Colores por asignatura === */
+.aplicaciones { background-color: #d6eaf8; }        /* Azul claro */
+.programacion { background-color: #d5f5e3; }       /* Verde menta */
+.seguridad { background-color: #fcf3cf; }          /* Amarillo pastel */
+.servicios { background-color: #ebdef0; }          /* Lila suave */
+.sor { background-color: #a9cce3; }                /* Azul medio */
+.digitalizacion { background-color: #fdebd0; }     /* Melocotón claro */
+.sostenibilidad { background-color: #abebc6; }     /* Verde claro */
+.ingles { background-color: #fadbd8; }             /* Rosa claro */
+.iti { background-color: #f9e79f; }                /* Amarillo cálido */
+.recreo { background-color: #f5b7b1; font-weight: bold; }
 
-/* --- hueco blanco a la izquierda del lunes --- */
-thead > tr:first-child > th:first-child {
-    background-color: white;      /* hueco en blanco */
-    border: none;
-}
-
-/* --- asignaturas con color específico --- */
-.aplicaciones_web { background-color: #ffffff; } /* azul claro */
-.entornos         { background-color: #d9ead3; } /* verde claro */
-.despliegue       { background-color: #fff2cc; } /* amarillo claro */
-.servidor         { background-color: #f4cccc; } /* rosado claro */
-.empresa          { background-color: #ead1dc; } /* lila claro */
-.cliente          { background-color: #cfe0e8; } /* azul grisáceo */
-.recreo           { background-color: #ffe599; } /* amarillo pastel */
-
-/* --- efecto hover general --- */
+/* === Hover === */
 td:hover {
-    filter: brightness(90%);      /* oscurece ligeramente */
-    cursor: pointer;
+  transform: scale(1.03);
+  filter: brightness(1.15);
+  cursor: pointer;
 }
 
-/* --- mostrar enlace solo al pasar el ratón --- */
+/* === Enlaces (visibles solo al pasar el ratón) === */
 td span {
-    visibility: hidden;           /* oculto por defecto */
-}
-
-td:hover span {
-    visibility: visible;          /* visible en hover */
+  display: block;
+  position: relative;
 }
 
 td span a {
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0.85em;
+  color: #154360;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+  transition: opacity 0.3s ease;
 }
 
-/* --- efecto hover para recreo --- */
-.recreo:hover {
-    background-color: #fff2cc;    /* cambia a amarillo más claro */
+td:hover span a {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* === Primera fila y columna especiales === */
+thead tr:first-child th:first-child {
+  background-color: #1a1a2e;
+}
+
+thead tr:first-child th {
+  border-radius: 8px;
 }
