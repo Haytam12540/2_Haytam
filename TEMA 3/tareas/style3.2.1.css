@@ -1,0 +1,58 @@
+
+.container {
+  display: flex;            
+  flex-direction: row;       
+  justify-content: flex-end;  
+  background-color: #4335a1;
+  padding: 10px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;      
+  background-color: #adae5b;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.caja {
+  background-color: rgb(49, 190, 56);
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #3a9440;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+#nav {
+  background-color: rgb(39, 150, 126);
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#nav ul {
+  display: flex;                
+  justify-content: space-around; 
+  list-style: none;          
+  padding: 0;
+}
+
+#nav ul li {
+  background-color: rgb(90, 213, 38);
+  padding: 10px 15px;
+  border: 5px solid rgb(31, 29, 29);
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#nav ul li :hover {
+  background-color: rgba(38, 221, 66, 0);
+}
+
+#nav ul li a {
+  color: rgb(0, 61, 108);
+  text-decoration: none; 
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<style>
+    .container {
+        display: grid;
+        grid-template-rows: 25% 50% 25%;
+        grid-template-columns: 25% 25% 25%; 
+        grid-template-areas: 
+            "header header header header"
+            "main main . aside" 
+            "footer footer footer footer";
+        height: 100vh;
+    }
+    header {
+        grid-area: header;
+        background-color: rgb(189, 127, 13)
+    }
+    main {
+        grid-area: main;
+        background-color: rgb(95, 169, 230);
+    }
+    aside {
+        grid-area: aside;
+        background-color: rgb(226, 226, 226);
+    }
+    footer {
+        grid-area: footer;
+        background-color: rgb(93, 187, 65);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <main>
+            <h1>MAIN</h1>
+        </main>
+        <aside>
+            <h1>ASIDE</h1>
+        </aside>
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+    </div>
+</body>
+</html>
