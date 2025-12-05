@@ -9,4 +9,7 @@ console.log('esViernes y queremos irnos: ' + esViernes);
 debugger
 if (esViernes == true) {
 console.log('es viernes, nos vamos de fiesta');
-}
+} 
+var nombreUsuario = prompt('cual es tu nombre?');
+console.log('el nombre del usuario es: ' + nombreUsuario);
+document.write("<h1>"+ nombreUsuario + "</h1>");
